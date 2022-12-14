@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Exercise 5</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="e-mail">E-mail Adress</label>
+      <input type="text" id="e-mail" name="e-mail" size="40"><br>
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password" size="26"><br>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" size="26"><br>
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" size="26"><br>
+      <label for="dateofbirth">Date of Birth</label>
+      <input type="date" id="dateofbirth" name="dateofbirth" size="26"><br>
+      <label for="phone_no">Phone Number</label>
+      <input type="text" id="phone_no" name="phone_no" pattern="{0-9}+"
+      size="26"><br>
+      <hr>
+      <label for="selected_plan">Choose your plan</label>
+      <select name="selected_plan" id="selected_plan">
+        <option value="free">Free Plan - 0$</option>
+        <option value="basic">Basic Plan - 50$/Annulay</option>
+        <option value="advanced">Advanced Plan - 100$/Annualy</option>
+      </select><br>
+        <label for="pro">
+        <input type="checkbox" id="pro" name="selected_plan" value="pro">
+        Pro Plan -150$/Annualy</label>
+
+      <label for="card_no">Credit Card Number</label>
+      <input type="text" id="card_no" name="card_no" pattern="{0-9}+"
+      size="40"><br>
+      <label for="cvc">CVC Number</label>
+      <input type="text" id="cvc" minlength="3" maxlength="3" pattern="{0-9}+"
+      size="1">
+      <label for="ex_date">Expiration Date</label>
+      <input type="month" id="ex_date" name="ex_date"><br>
+      <label for="adress">Billing Adress</label>
+      <textarea name="adress" id="adress" cols="40" rows="3"></textarea>
+      <br>
+      <br>
+      <button>Submit Form</button>
+    </form>
+  </body>
+</html>
